@@ -4,7 +4,43 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
+        {* device/htc/pme/
+e9721d1 pme: overlay: cleanup doze configs
+0fb072e pme: config.fs: remove service which doesnt use the device
+ec4a5cb pme: cleanup charging
+0c18a4f pme: sync with LA.UM.7.5.2.r1-03300-8x96.0 - CAF device/qcom/common
+15b4b42 pme: tune props
+09d3cdc pme: Live Wallpapers support
+7ddb8ce pme: add SysUI to PRODUCT_DEXPREOPT_SPEED_APPS
+8fae9f6 pme: Allow active package broadcast
+10e986f pme: Add system call to the SE whitelist
+576140b pme: mediacodec: Allow syscalls needed by OMX component
+5c379fc pme: Enable TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT
+d4261f4 pme: Don't set custom file attributes for cnss-daemon
+
+   * hardware/qcom/display/
+4ddd151 Revert "sdm: core: Use upstream DRM_MODE_REFLECT_ defines"
+
+   * vendor/htc/
+5accf11 pme: add htc charger service* device/htc/pme/
+e9721d1 pme: overlay: cleanup doze configs
+0fb072e pme: config.fs: remove service which doesnt use the device
+ec4a5cb pme: cleanup charging
+0c18a4f pme: sync with LA.UM.7.5.2.r1-03300-8x96.0 - CAF device/qcom/common
+15b4b42 pme: tune props
+09d3cdc pme: Live Wallpapers support
+7ddb8ce pme: add SysUI to PRODUCT_DEXPREOPT_SPEED_APPS
+8fae9f6 pme: Allow active package broadcast
+10e986f pme: Add system call to the SE whitelist
+576140b pme: mediacodec: Allow syscalls needed by OMX component
+5c379fc pme: Enable TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT
+d4261f4 pme: Don't set custom file attributes for cnss-daemon
+
+   * hardware/qcom/display/
+4ddd151 Revert "sdm: core: Use upstream DRM_MODE_REFLECT_ defines"
+
+   * vendor/htc/
+5accf11 pme: add htc charger service
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
@@ -13,3 +49,683 @@
         }
     ]
 }
+=======================
+     08-11-2019
+=======================
+
+
+   * vendor/pixelstyle/
+2206d3d Update AmbientPlayProvider
+79cc6ee Add permissions for ambient play provider
+
+=======================
+     08-10-2019
+=======================
+
+
+=======================
+     08-09-2019
+=======================
+
+
+=======================
+     08-08-2019
+=======================
+
+
+=======================
+     08-07-2019
+=======================
+
+
+   * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
+6d96848 Prevent OOB Read in Mfc_Transceive
+597f5c6 Prevent OOB write in Mfc_Transceive
+a36d991 Prevent OOB write in phFriNfc_ExtnsTransceive
+524414f Skip setEnableHostRouting when switching to screen off
+
+   * vendor/qcom/opensource/audio/
+acf6244 policy_hal: Adapt to AudioMix API changes in f/av audiopolicy
+
+=======================
+     08-06-2019
+=======================
+
+   * art/
+3ff04a7 Merge tag 'android-9.0.0_r46' into staging/lineage-16.0_merge-android-9.0.0_r46
+
+   * packages/apps/Nfc/
+7fab21a Merge tag 'android-9.0.0_r46' into staging/lineage-16.0_merge-android-9.0.0_r46
+
+=======================
+     08-05-2019
+=======================
+
+
+=======================
+     08-04-2019
+=======================
+
+
+=======================
+     08-03-2019
+=======================
+
+
+   * hardware/broadcom/libbt/
+4545703 libbt: configure audio codec right after firmware
+
+=======================
+     08-02-2019
+=======================
+
+
+=======================
+     06-04-2019
+=======================
+   * pme: fix boot
+
+   * build/make/
+98f569b Merge tag 'android-9.0.0_r40' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/av/
+adb24c6 Merge tag 'android-9.0.0_r40' of https://android.googlesource.com/platform/frameworks/av into HEAD
+
+   * frameworks/base/
+49d037f Frameworks: pop up error when rename a file in the DocumentsUI
+54979f9 Merge tag 'android-9.0.0_r40' of https://android.googlesource.com/platform/frameworks/base into HEAD
+1749c51 Network traffic: fix static color usage
+157c8b87f NetworkTraffic: Adjust font size
+2ea973e KeyguardSliceProvider: Show dnd icon regardless of suppression mode
+
+   * manifest/
+53cb709 Track system/bt and stop tracking skia
+d873f47 Merge branch 'android-9.0.0_r40' of https://android.googlesource.com/platform/manifest into HEAD
+8a6252e Manifest for Android 9.0.0 Release 40
+
+   * packages/apps/Bluetooth/
+7d30f4d Merge tag 'android-9.0.0_r40' of https://android.googlesource.com/platform/packages/apps/Bluetooth into HEAD
+
+   * packages/apps/DocumentsUI/
+5cfc9a4 Revert "RenameDocumentFragment: Temporary ignore file/dir rename error"
+
+   * prebuilts/clang/host/linux-x86/
+7865d5c Merge tag 'android-9.0.0_r40' of https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 into HEAD
+
+   * system/bt/
+aa3693e Merge tag 'android-9.0.0_r40' into HEAD
+
+   * system/vold/
+1341b67 Merge tag 'android-9.0.0_r40' of https://android.googlesource.com/platform/system/vold into HEAD
+
+   * vendor/gapps/
+38cda27 Update gapps
+
+   * vendor/pixelstyle/
+e865184 Update apps
+
+=======================
+     06-03-2019
+=======================
+
+
+   * build/make/
+0856612 build: Allow mounting system properly for A-only system-as-root devices
+
+   * frameworks/base/
+8bec980 Add overlay for SetupWizard [1/2]
+2039b9e Automatic translation import
+b9bfc54 BatteryMetterView: Don't scale if fully charged
+0527bfa [1/2] NetworkTraffic: Rework
+a374d74 Use headline font on network traffic
+4a91667 Add network traffic monitor properly to statusbar icons
+f61dc73 Merge "Separate custom fonts from material theme [2/2]" into pie
+620fd49 Add FaceLock dark theme [2/2]
+f665215 Improve theming - 2
+
+   * frameworks/native/
+ca699fb Revert "Gralloc2: Mark some gralloc bits as valid"
+
+   * manifest/
+85edd36 Track sdm845 hals from lineage
+
+   * packages/apps/Settings/
+a69d895 Automatic translation import
+e98622e [2/2] NetworkTraffic: Rework
+073f9dd Merge "Settings: Change fonts" into pie
+c156e6a Use custom_accent_color on switch bar background
+afae52c [2/2] Move settings theme to night mode based
+
+   * packages/apps/Updates/
+7ff4532 Automatic translation import
+
+   * packages/providers/AmbientPlayHistoryProvider/
+1eac5ad Automatic translation import
+
+   * packages/providers/DownloadProvider/
+b372078 Automatic translation import
+
+   * packages/services/Telecomm/
+5c78519 Telecomm: Change font on some parts
+
+   * packages/services/Telephony/
+79fc3c8 More theming fixes
+
+   * system/core/
+5f41997 fs_mgr: Add MF_WRAPPEDKEY flag
+
+   * system/vold/
+95ec12a vold: change to upgrade key if export fails
+da4004e vold: add support for clear key
+d3f1d9b vold: Use separate flag for wrappedkey
+
+   * vendor/aosp/
+03192d7 Add overlay for SetupWizard [2/2]
+7734caa Merge "qcom: Add UM 4.14 platforms" into pie
+726ccc9 Merge "qcom: Mark some gralloc bits as valid" into pie
+77e23df Merge "vendor: overlay: Change preference category font style" into pie
+e0f226a qcom: Add UM 4.14 platforms
+ea04f63 qcom: Mark some gralloc bits as valid
+
+   * vendor/themes/
+636da98 Automatic translation import
+
+=======================
+=======================
+
+
+   * packages/apps/Settings/
+75d924d Settings: Change fonts
+
+   * vendor/themes/
+a4a64fb Fix actionbar font
+
+=======================
+     06-01-2019
+=======================
+
+
+   * frameworks/base/
+030e6ff Separate custom fonts from material theme [2/2]
+200b458 Remove device settings overlays [2/2]
+62befee Expose custom_accent_color
+
+   * hardware/lineage/livedisplay/
+fd1713f sdm: Fix restoring default mode when using prebuilt vendor
+
+   * packages/apps/DocumentsUI/
+cf92206 DocumentsUI: Change fonts
+
+   * packages/apps/PackageInstaller/
+10bbff0 PackageInstaller: Change fonts
+
+   * vendor/themes/
+baf8cdb Remove device settings overlays [2/2]
+79aa400 Change custom_accent_color on white accent
+78f3125 Fix autofill colors again
+13a6ded Add FaceLock dark theme [1/2]
+482f39f [1/2] Move settings theme to night mode based
+89adfa9 Separate custom fonts from material theme [1/2]
+
+=======================
+     05-31-2019
+=======================
+
+
+   * frameworks/base/
+334f19b Fix back button not appearing after camera gesture launch
+312717e Fixed auto-brightness first screen update.
+
+   * hardware/qcom/fm/
+2b02501 Refresh FM state after speaker/earphone switching
+8ddd121 Merge https://github.com/aosp-caf-upstream/platform_vendor_qcom-opensource_fm-commonsys into HEAD
+
+   * manifest/
+987dbff Fix sdm710    *s
+6b4f605 Track hardware/qcom/sdm845/data/ipacfg-mgr
+
+   * packages/apps/DocumentsUI/
+5e007d9 Fix white bg on white text
+
+   * vendor/pixelstyle/
+f0545b1 Use custom accent on auto fill dialog
+
+=======================
+     05-30-2019
+=======================
+
+
+   * device/custom/sepolicy/
+5c3bcbd qcom: Extend untrusted_app access to battery/power supply sysfs
+
+   * manifest/
+daa58ed manifest: Add sm8150 HALs
+e40ac79 Sync a newer revision of hardware/google/pixel
+15787df manifest: Add sdm710 and hardware/google/pixel    *s for bonito
+1d9f1df manifest: Track our own libpng
+
+   * packages/services/Telephony/
+87bfa9a Add missing null check on start of SipIncomingCallReceiver received.
+248b665 Change action bar icon and text color from white to grey
+e263591 Fix the drawable resource can't be loaded from RRO package
+
+=======================
+     05-29-2019
+=======================
+
+
+=======================
+     05-28-2019
+=======================
+
+
+=======================
+     05-27-2019
+=======================
+
+
+=======================
+     05-26-2019
+=======================
+
+
+   * manifest/
+91aace0 Track PackageInstaller
+
+   * packages/apps/EmergencyInfo/
+1c0fc3b EmergencyInfo: Change preference category font style
+
+   * vendor/aosp/
+09e13e1 vendor: overlay: Change preference category font style
+
+=======================
+     05-25-2019
+=======================
+
+pme: fix boot on PE
+
+=======================
+     05-24-2019
+=======================
+
+
+=======================
+     05-23-2019
+=======================
+
+
+   * frameworks/base/
+94c6d6d Use headline font on battery percentage
+
+   * vendor/aosp/
+1814ff4 soong_config: Add flag for devices use metadata as FDE key
+
+   * vendor/qcom/opensource/cryptfs_hw/
+2e042a3 cryptfs_hw: Support devices use metadata as key
+
+=======================
+     05-22-2019
+=======================
+
+
+   * frameworks/base/
+fd344b8 TwilightTracker: Disable debug
+46b38c3 Fix NPE on navbar
+2c0a42f LiveDisplay: Improve sunrise/sunset calculator
+=======================
+     05-21-2019
+=======================
+Merge branch 'hmp' into pixel-experience
+pme: remove duplicates  …
+pme: Add QCOM's WFD implementation
+pme: overlay: updates
+pme: rootdir: leds permission
+pme: rootdir: Allow persistent faking of bms
+pme: rootdir: add permission for htc used diags
+pme: update ril
+pme: Camera API Override with 26
+pme: init: power: update setups
+pme: overlay: update power profile from stock  …
+pme: configs: media: update from op3 P
+
+   * frameworks/base/
+659cdac SystemUI: Fix clock icon blacklist handling
+fc21efe Improve theming: Force stop settings after refreshing overlays
+f08f287 WallpaperManagerService: Fix battery saver enabled on dark mode
+9c35c6b Use headline font in preference title
+e863724 systemui: use headline font for carrier label
+6638500 Merge "base: Use headline font in notification texts" into pie
+f5f3885 Merge "SystemUI: Use headline font in various parts" into pie
+70088fb Revert "Revert "Fix action bar font family on material themes""
+
+   * packages/apps/Settings/
+576278f Use text color primary on eject sdcard icon
+1601b85 Merge "Automatic translation import" into pie
+
+   * packages/apps/Updates/
+ac5fc07 Merge "Migrate dark theme to overlay" into pie
+
+   * vendor/aosp/
+9657481 Revert "vendor: Add com.google.android.apps.restore to some configs"
+
+   * vendor/gapps/
+f64b9d0 Update AndroidMigratePrebuilt
+
+   * vendor/themes/
+81741f6 Merge changes from topic "theme_improvements" into pie
+
+   * frameworks/base/
+9c35c6b Use headline font in preference title
+e863724 systemui: use headline font for carrier label
+6638500 Merge "base: Use headline font in notification texts" into pie
+f5f3885 Merge "SystemUI: Use headline font in various parts" into pie
+70088fb Revert "Revert "Fix action bar font family on material themes""
+325891c base: Use headline font in notification texts
+5a90c80 SystemUI: Use headline font in various parts
+08e8585 Themes: Update wellbeing overlay package name
+ca4e588 Improve theming
+661a0b60 SettingsLib: Don't show system overlays on apps list
+210af8f Add black theme support [3/3]
+513fcbd [2/2] Introduce overlays for DocumentsUI and ota app
+aea7fe0 Restrict SwitchBar custom bg to white accent [2/2]
+214840c Automatic translation import
+e94106b [1/2] fwb: Hwkeys: Allow configuring some default actions
+37b16ba fwb: Hwkeys disable: Improve disabling on some cases
+35f6aa3 OpaLayout: Fix IllegalStateException
+412d56a Merge "LiveDisplay: Change night/day mode transition behavior" into pie
+0ac305b PagedTileLayout: Fix IllegalStateException
+a6f299c Fix NPE on ExpandableNotificationRow
+35d4deb LiveDisplay: Change night/day mode transition behavior
+
+   * packages/apps/Settings/
+1601b85 Merge "Automatic translation import" into pie
+6a51ca3 Automatic translation import
+faf913e Settings: Use accent color on storage bar
+218bf55 Add black theme support [1/3]
+66c0e6e Restrict SwitchBar custom bg to white accent [1/2]
+0ef8627 [2/2] Settings: Hwkeys: Allow configuring some default actions
+
+   * packages/apps/Updates/
+ac5fc07 Merge "Migrate dark theme to overlay" into pie
+612c85a Automatic translation import
+dfcbf5e Migrate dark theme to overlay
+777af76 Cleanup stored zips if no updates available
+cfed54e Utils: Match file size function from website
+48be80f Show /data path on install dialog
+
+   * vendor/gapps/
+48371a9 Add velvet arm
+
+   * vendor/themes/
+81741f6 Merge changes from topic "theme_improvements" into pie
+b86fd3a Automatic translation import
+12b46c7 Update Wellbeing theming
+ef82c41 Add black theme support [2/3]
+27fd624 [1/2] Introduce overlays for DocumentsUI and ota app
+808baa7 Cleanup strings
+
+=======================
+     05-20-2019
+=======================
+
+
+=======================
+     05-19-2019
+=======================
+
+
+=======================
+     05-18-2019
+=======================
+
+
+=======================
+     05-17-2019
+=======================
+
+
+   * vendor/pixelstyle/
+97e5ca7 Revert "Add config_ringtoneEffectUris"
+
+=======================
+     05-16-2019
+=======================
+
+
+   * hardware/qcom/audio-caf/msm8996/
+6970cfd audio_extn: Add missing pthread.h includes
+
+   * packages/apps/Bluetooth/
+6ae1b2d Fix NPE on isMandatoryCodec
+
+=======================
+     05-15-2019
+=======================
+
+
+=======================
+     05-14-2019
+=======================
+
+
+   * frameworks/native/
+b915a10 Revert some commits related to screenshot when notch hidden
+
+   * packages/apps/DocumentsUI/
+2b1760a Migrate dark theme to overlay
+
+   * system/bt/
+d48026c Explicit SBC Dual Channel (SBC HD) support
+1456480 Increase maximum Bluetooth SBC codec bitrate for SBC HD
+
+   * vendor/aosp/
+6cc5329 vendor: Add com.google.android.apps.restore to some configs
+
+=======================
+     05-13-2019
+=======================
+
+
+=======================
+     05-12-2019
+=======================
+
+
+=======================
+     05-11-2019
+=======================
+
+
+   * frameworks/base/
+e33786a Automatic theme based on time: Restore last state on boot
+d50d590 Whitelist default dialer app for heads up
+
+   * packages/apps/Settings/
+1af1930 LiveDisplay: Fix search
+
+   * vendor/aosp/
+299361d apns: Update IRAN APNs
+3488819 kernel: Fix modules path generated in modules.dep
+
+=======================
+     05-10-2019
+=======================
+
+
+=======================
+     05-09-2019
+=======================
+
+
+   * device/custom/sepolicy/
+f2a45a4 sepolicy: More fixes for OTA app
+
+   * external/icu/
+1d56f7e Merge tag 'android-9.0.0_r37' into staging/lineage-16.0_merge-android-9.0.0_r37
+
+   * external/skia/
+c344652 Merge tag 'android-9.0.0_r37' into staging/lineage-16.0_merge-android-9.0.0_r37
+
+   * frameworks/base/
+77b2bba SwipeToScreenshot: Import MIUI implementation
+aaaed37 Fix derp on "Fix screen pinning unlock with hwkeys"
+
+   * system/timezone/
+5822955 Merge tag 'android-9.0.0_r37' into staging/lineage-16.0_merge-android-9.0.0_r37
+
+=======================
+     05-08-2019
+=======================
+
+
+   * device/custom/sepolicy/
+c059339 Allow OTA app to access recovery service
+
+   * frameworks/base/
+01f77da Improvements for swipe to screenshot
+9c31794 Add swipe-to-screenshot gesture
+6555d1f Cutout force full screen: Remove fullscreen checks
+372be53 NavbarUtils: Allow disabling by qemu.hw.mainkeys
+
+   * packages/apps/DocumentsUI/
+8aa90f5 RenameDocumentFragment: Temporary ignore file/dir rename error
+
+   * packages/apps/Settings/
+f585837 Add Swipe to screenshot preference
+
+   * vendor/aosp/
+74e9b55 vendor: Cleanup carrier overlays
+=======================
+     04-28-2019
+=======================
+   * pme: fixes livedisplay / night light
+   * pme: restore radio 1.0 config for oreo blobs
+   * pme: init & prop: ril settings cleanup
+   * pme: configs: media: codecs update to P
+   * pme: reconfigure power
+
+   * Kernel/pme: more BLN disables ( pulsating, charge effect )
+   * Kernel/pme: home behavior moved to stock instead of doupletap2sleep
+
+=======================
+     04-27-2019
+=======================
+   * pme: fixes navigation bar
+   * Kernel/pme: BLN disabled by default
+
+   * prebuilts/clang/host/linux-x86/
+2c6609b Merge pull request #1 from Hlcpereira/pie
+
+=======================
+     04-26-2019
+=======================
+
+
+=======================
+     04-25-2019
+=======================
+
+
+=======================
+     04-24-2019
+=======================
+
+
+=======================
+     04-23-2019
+=======================
+
+
+   * frameworks/base/
+f8b4846 NetworkStatsHistory: Prevent IllegalArgumentException
+
+   * hardware/qcom/display/
+bc2fb73 display: msm8974: Add -Wno-error to compile with global -Werror.
+
+   * vendor/gapps/
+26104b2 Merge branch 'pie' into 'pie'
+
+=======================
+     04-22-2019
+=======================
+
+
+   * frameworks/av/
+6f8f4f4 CameraMetadata: HAX - Fix front cam on Playground
+
+   * frameworks/base/
+413a8d6 Revert some gestures commits
+1   
+=======================
+     04-21-2019
+=======================
+
+
+=======================
+     04-20-2019
+=======================
+
+
+   * hardware/qcom/power/
+7a6424e power: don't use SCROLL_PREFILING
+0af68fd power: Release launch boost perflock when launch is completed
+80fd50a Revert "power: Remove interaction_with_handle"
+3df4181 power: Pass NULL parameter in powerHint if data is zero
+
+=======================
+     04-19-2019
+=======================
+
+
+   * device/custom/sepolicy/
+8efcbfc sepolicy: Fix moar ota app denials
+a747bda [2/2] sepolicy: update_engine neverallows
+6c94513 sepolicy: common: Add a label for /data/system_updates
+
+   * frameworks/base/
+87e9785 ColorFade: fix EGL crash on exynos4 mali blobs
+9f6f8da fonts: Fix 23d135738da
+
+   * packages/apps/Updates/
+786945c Use alternative method to get formatted file size
+0ce91d0 Make separate styles for menu and alerts
+1b41a87 Reduce top padding
+
+   * system/sepolicy/
+d6a912d [1/2] sepolicy: update_engine neverallows
+bec85ae sepolicy: allow update_engine to bypass neverallows for backuptool
+
+   * vendor/aosp/
+7c8822c Partially Revert "vendor: Import carrier overlays from omni"
+66a00e2 vendor: Don't hide LTE+/4G+ icon
+4dbb473 Never allow neverallows
+
+=======================
+     04-18-2019
+=======================
+
+
+=======================
+     04-17-2019
+=======================
+
+
+=======================
+     04-16-2019
+=======================
+
+
+   * device/qcom/sepolicy-legacy/
+27221b2 sepolicy: Label persist partition for all SoCs (#2)
+
+   * hardware/qcom/power/
+99e6bac Merge pull request #1 from uvera/pie
+
+=======================
+     04-15-2019
+=======================
+
+
+=======================
+     04-14-2019
+=======================
